@@ -54,14 +54,46 @@
 		D584821C1EEE03A7007DFD8C /* FireApp */ = {
 			isa = PBXGroup;
 			children = (
+				D58482321EEE03CE007DFD8C /* Modal */,
+				D58482311EEE03C9007DFD8C /* View */,
+				D58482301EEE03C3007DFD8C /* Controller */,
+				D584822F1EEE03B4007DFD8C /* Supporting Files */,
+			);
+			path = FireApp;
+			sourceTree = "<group>";
+		};
+		D584822F1EEE03B4007DFD8C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
 				D584821D1EEE03A7007DFD8C /* AppDelegate.swift */,
-				D584821F1EEE03A7007DFD8C /* ViewController.swift */,
-				D58482211EEE03A7007DFD8C /* Main.storyboard */,
 				D58482241EEE03A7007DFD8C /* Assets.xcassets */,
 				D58482261EEE03A7007DFD8C /* LaunchScreen.storyboard */,
 				D58482291EEE03A7007DFD8C /* Info.plist */,
 			);
-			path = FireApp;
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D58482301EEE03C3007DFD8C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D584821F1EEE03A7007DFD8C /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		D58482311EEE03C9007DFD8C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D58482211EEE03A7007DFD8C /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		D58482321EEE03CE007DFD8C /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Modal;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
