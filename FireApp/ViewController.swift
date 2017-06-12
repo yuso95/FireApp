@@ -7,19 +7,32 @@
 //
 
 import UIKit
+import Firebase
 
 class ViewController: UIViewController {
+    
+    let conditionRef = FIRDatabase.database().reference().child("condition")
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        conditionRef.observeSingleEvent(of: .value, with: { (snap) in
+            // Do something
+            // Optional Value
+            self.conditionLabel.text = snap.value.debugDescription
+        })
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    // MARK: Outlets
+    @IBOutlet weak var conditionLabel: UILabel!
+    
+    // MARK: Actions
+    @IBAction func sunnyDidTouch(_ sender: UIButton) {
+        conditionRef.setValue(sender.currentTitle)
     }
-
-
+    
+    @IBAction func foggyDidTouch(_ sender: UIButton) {
+        conditionRef.setValue(sender.currentTitle)
+    }
 }
 
