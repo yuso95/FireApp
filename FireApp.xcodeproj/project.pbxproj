@@ -83,7 +83,6 @@
 				D58482321EEE03CE007DFD8C /* Modal */,
 				D58482311EEE03C9007DFD8C /* View */,
 				D58482301EEE03C3007DFD8C /* Controller */,
-				D58482331EEE07EC007DFD8C /* Dependencies */,
 				D584822F1EEE03B4007DFD8C /* Supporting Files */,
 			);
 			path = FireApp;
@@ -96,6 +95,7 @@
 				D58482241EEE03A7007DFD8C /* Assets.xcassets */,
 				D58482261EEE03A7007DFD8C /* LaunchScreen.storyboard */,
 				D58482291EEE03A7007DFD8C /* Info.plist */,
+				D58482341EEE0802007DFD8C /* GoogleService-Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -121,14 +121,6 @@
 			children = (
 			);
 			name = Modal;
-			sourceTree = "<group>";
-		};
-		D58482331EEE07EC007DFD8C /* Dependencies */ = {
-			isa = PBXGroup;
-			children = (
-				D58482341EEE0802007DFD8C /* GoogleService-Info.plist */,
-			);
-			name = Dependencies;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -425,6 +417,7 @@
 				D584822E1EEE03A7007DFD8C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

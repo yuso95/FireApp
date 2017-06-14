@@ -16,11 +16,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        conditionRef.observeSingleEvent(of: .value, with: { (snap) in
-            // Do something
-            // Optional Value
-            self.conditionLabel.text = snap.value.debugDescription
-        })
+        conditionRef.observe(.value) { (snap) in
+            self.conditionLabel.text = snap.value as? String
+        }
     }
     
     // MARK: Outlets
